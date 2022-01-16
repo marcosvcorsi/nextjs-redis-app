@@ -8,7 +8,7 @@ export const carSchema = new Schema(
     make: { type: "string" },
     model: { type: "string" },
     image: { type: "string" },
-    description: { type: "string" },
+    description: { type: "string", textSearch: true },
   },
   {
     dataStructure: "JSON",
